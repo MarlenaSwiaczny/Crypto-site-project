@@ -4,5 +4,6 @@
 .headerContainer {
 @include box-shadow();
 @include d-flex-row();
+@include gradient();
 padding: 1rem 0;
 }

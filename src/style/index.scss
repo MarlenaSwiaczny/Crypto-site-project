@@ -1,7 +1,7 @@
 $blue-color: #7FD9F3;
 $white-color: #fff;
 $dark-color: #282A27;
-
+$dark-color-shadow: #282a275e;
 $border-radius: 0.7rem;
 
 @mixin container() {
@@ -9,10 +9,15 @@ $border-radius: 0.7rem;
     margin: 0 120px;
 }
 
+@mixin gradient() {
+    background-color: rgba(127, 217, 243, 1);
+    background-image: linear-gradient(0deg, rgba(127, 217, 243, 1) 0%, rgba(249, 249, 249, 1) 43%);
+}
+
 @mixin box-shadow() {
--webkit-box-shadow: 5px 5px 12px 2px $dark-color;
--moz-box-shadow: 5px 5px 12px 2px $dark-color;
-box-shadow: 5px 5px 12px 2px $dark-color;
+-webkit-box-shadow: 5px 5px 12px 2px $dark-color-shadow;
+-moz-box-shadow: 5px 5px 12px 2px $dark-color-shadow;
+box-shadow: 5px 5px 12px 2px $dark-color-shadow;
 }
 
 @mixin d-flex-column() {

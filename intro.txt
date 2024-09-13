@@ -1,2 +1,11 @@
 npm i sass 
 instalacja sass do plików *.scss
+
+figma - projekt wizualny, 
+- łatwe wklejanie obrazów i exportowanie obrazów i ikon jako png lub svg
+- pobieranie kolorów
+- edycja obrazków (np ze strony icons8) ==> icons8 for free, ale trzeba (np. w stopce) umieścić info o źródle
+www.figma.com
+
+
+deploy: app.netlify.com

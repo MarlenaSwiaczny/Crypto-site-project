@@ -1,20 +1,20 @@
-import hamburger from "../../../assets/hamburger-menu.svg"
-import style from "./Hamburger.module.scss"
 
-function clickHandler() {
-    console.log("clicked!")
-}
+import hamburger from "../../../assets/icons8-hamburger-menu.svg";
+import style from "./Hamburger.module.scss";
 
-function Hamburger() {
-    const isTrue = false;
+
+function Hamburger(props) {
+
+    const clickHandler = () => {
+        props.toggleOpenMenu(prev => !prev)
+    };
+
 
     return(
         <>
-        <img className={style.hamburgerIcon} onClick={() => clickHandler} src={hamburger} alt="hamburger" />
-        {isTrue && <><p>Login</p>
-        <p>Sign up</p></>}
+        <img className={style.hamburgerIcon} onClick={clickHandler} src={hamburger} alt="hamburger" />
         </>
     )
-}
+};
 
 export default Hamburger;

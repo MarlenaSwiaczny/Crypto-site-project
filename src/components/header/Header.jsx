@@ -1,13 +1,13 @@
 import style from "./Header.module.scss";
-import Hamburger from "./hamburger/Hamburger.jsx";
-import Logo from "./logo/Logo.jsx";
+import Hamburger from "./Hamburger/Hamburger.jsx";
+import Logo from "./Logo/Logo.jsx";
 
 
-function Header() {
+function Header(props) {
     return (
         <header className={style.headerContainer}>
             <Logo />
-            <Hamburger />
+            <Hamburger toggleOpenMenu={props.toggleOpenMenu}/>
         </header>
     )
 }

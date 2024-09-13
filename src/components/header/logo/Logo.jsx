@@ -4,8 +4,8 @@ import style from "./Logo.module.scss"
 function Logo() {
     return (
         <>
-        <img className={style.logoIcon} src={logo} alt="logo"/>
-        <h1>Crypto Site</h1>
+        
+        <h1 className={style.logo}><img className={style.logoIcon} src={logo} alt="logo"/> Crypto Site</h1>
         </>
     )
 }
