@@ -1,0 +1,31 @@
+$blue-color: #7FD9F3;
+$white-color: #fff;
+$dark-color: #282A27;
+
+$border-radius: 0.7rem;
+
+@mixin container() {
+    background-color: $white-color;
+    margin: 0 120px;
+}
+
+@mixin box-shadow() {
+-webkit-box-shadow: 5px 5px 12px 2px $dark-color;
+-moz-box-shadow: 5px 5px 12px 2px $dark-color;
+box-shadow: 5px 5px 12px 2px $dark-color;
+}
+
+@mixin d-flex-column() {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+@mixin d-flex-row() {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}

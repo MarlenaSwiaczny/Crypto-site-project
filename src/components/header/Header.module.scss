@@ -1,0 +1,8 @@
+@import "../../style/index.scss";
+
+
+.headerContainer {
+@include box-shadow();
+@include d-flex-row();
+padding: 1rem 0;
+}

@@ -1,0 +1,2 @@
+npm i sass 
+instalacja sass do plików *.scss
